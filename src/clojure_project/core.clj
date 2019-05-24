@@ -1,6 +1,9 @@
-(ns clojure-project.core)
+(ns clojure-project.core
+  ( :use compojure.core)
+  ( :require [compojure.route :as route]))
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(defn foo [x] (str x "Hello," x))
+
+(defroutes my-routes
+           (GET "/" [] (foo "Jim"))
+           (route/resources "/"))
