@@ -9,6 +9,8 @@
          :auto-refresh? false}
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [ring/ring "1.3.2"]
+                 [clj-webdriver "0.7.1"]
                  [ring/ring-json "0.2.0"]
+                 [org.seleniumhq.selenium/selenium-java "2.47.1"]
                  [compojure "1.2.0-SNAPSHOT"]])
 
